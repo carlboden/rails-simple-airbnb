@@ -1,5 +1,19 @@
-<ul>
+<h1>All our flats</h1>
+<ul class="list-group list-group-flush">
 <% @flats.each do |flat| %>
-<li><%= link_to flat.name, flat_path(flat) %></li>
+<div class="row">
+<div class="col-sm-6">
+<li class="list-group-item">
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"><%= flat.description %></p>
+
+  </div>
+</div>
+</li>
+</div>
+</div>
 <% end %>
 </ul>
